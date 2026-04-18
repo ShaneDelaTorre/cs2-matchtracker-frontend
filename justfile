@@ -22,3 +22,10 @@ reset:
 # Run a specific script with arguments (e.g., 'just test --watch')
 test *args:
     pnpm test {{args}}
+
+# Formatter
+format:
+    pnpm exec prettier --write .
+
+format-check:
+    pnpm exec prettier --check .
