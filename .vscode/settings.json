@@ -1,9 +1,0 @@
-{
-    "workbench.colorTheme": "Webstorm New Dark",
-    "editor.fontFamily": "'Source Code Pro SemiBold'",
-    "editor.inlayHints.fontSize": 12,
-    "editor.inlayHints.padding": true,
-    "editor.bracketPairColorization.enabled": false,
-    "editor.guides.bracketPairs": "active",
-    "color-highlight.markRuler": false,
-}
