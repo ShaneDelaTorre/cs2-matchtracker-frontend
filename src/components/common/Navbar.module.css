@@ -1,0 +1,81 @@
+/* components/common/Navbar.module.css */
+.nav {
+  background: white;
+  border-bottom: 1px solid #e2e8f0;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.inner {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.logoDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e24b4a;
+  display: inline-block;
+}
+
+.links {
+  display: flex;
+  gap: 4px;
+}
+
+.link {
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 13px;
+  color: #64748b;
+  transition: background 0.15s, color 0.15s;
+}
+
+.link:hover {
+  background: #f1f5f9;
+  color: #0f172a;
+}
+
+.active {
+  background: #f1f5f9;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.logout {
+  padding: 6px 14px;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  background: white;
+  color: #64748b;
+  transition: background 0.15s, color 0.15s;
+}
+
+.logout:hover {
+  background: #fff1f1;
+  color: #a32d2d;
+  border-color: #fca5a5;
+}
