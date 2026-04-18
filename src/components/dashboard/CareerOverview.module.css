@@ -1,0 +1,39 @@
+.heading {
+  font-size: 12px;
+  font-weight: 600;
+  color: #94a3b8;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.card {
+  background: #f8fafc;
+  border-radius: 10px;
+  padding: 16px 20px;
+}
+
+.label {
+  font-size: 12px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.value {
+  font-size: 26px;
+  font-weight: 600;
+  color: #0f172a;
+  line-height: 1;
+}
+
+.skeleton {
+  height: 100px;
+  border-radius: 10px;
+  background: #f1f5f9;
+}
