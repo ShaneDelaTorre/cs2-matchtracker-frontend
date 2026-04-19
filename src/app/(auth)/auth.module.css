@@ -80,6 +80,23 @@
   opacity: 0.85;
 }
 
+.submitBtn:hover:not(:disabled) {
+  opacity: 0.85;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.error {
+  font-size: 13px;
+  color: #a32d2d;
+  background: #fcebeb;
+  padding: 8px 12px;
+  border-radius: 8px;
+}
+
 .footer {
   text-align: center;
   font-size: 13px;
@@ -89,9 +106,5 @@
 
 .footerLink {
   color: #378add;
-  background: none;
-  border: none;
-  font-size: 13px;
-  padding: 0;
   text-decoration: underline;
 }
