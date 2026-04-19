@@ -45,3 +45,6 @@ next-env.d.ts
 
 # next cache files
 .next
+
+# .env files
+.env.local
