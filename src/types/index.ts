@@ -19,8 +19,8 @@ export type Weapon = {
 
 export type WeaponStat = {
   id: number
-  weapon: number       // FK id
-  weapon_name: string  // from WeaponStatViewSerializer
+  weapon: number       
+  weapon_name: string  
   kills: number
 }
 
@@ -36,8 +36,8 @@ export type UserMatchStat = {
 
 export type Match = {
   id: number
-  map_played: number   // FK id
-  map_name: string     // from MatchSerializer source="map_played.name"
+  map_played: number 
+  map_name: string 
   date_played: string
   result: "Win" | "Loss" | "Draw"
   team_score: number
