@@ -1,10 +1,18 @@
 "use client"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
+import { usePathname, useRouter } from "next/navigation"
+import { useAuth } from "@/context/AuthContext"
 import styles from "./Navbar.module.css"
 
 export default function Navbar() {
   const pathname = usePathname()
+  const router = useRouter()
+  const { user, logout } = useAuth()
+
+  function handleLogout() {
+    logout()
+    router.push("/login")
+  }
 
   return (
     <nav className={styles.nav}>
@@ -29,7 +37,12 @@ export default function Navbar() {
             </Link>
           </div>
         </div>
-        <button className={styles.logout}>Log out</button>
+        <div className={styles.right}>
+          {user && <span className={styles.username}>{user.username}</span>}
+          <button className={styles.logoutBtn} onClick={handleLogout}>
+            Log out
+          </button>
+        </div>
       </div>
     </nav>
   )
