@@ -9,7 +9,7 @@ import WinRateByMap from "@/components/dashboard/WinRateByMap"
 import styles from "./page.module.css"
 
 export default function DashboardPage() {
-  const { user } = useAuth()
+  const { user, updateUser } = useAuth()
   const [careerStats, setCareerStats] = useState<CareerStats | null>(null)
 
   useEffect(() => {
@@ -36,7 +36,7 @@ export default function DashboardPage() {
 
   return (
     <div className={styles.page}>
-      <ProfileCard user={user} />
+      <ProfileCard user={user} onUserUpdate={updateUser}/>
       <CareerOverviewComponent careerOverview={careerOverview} />
       <WinRateByMap maps={mapWinRates} />
     </div>
